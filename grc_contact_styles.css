@@ -35,12 +35,12 @@ nav .logo img {
     max-width: 150px;  
 }
 /* flex basis on the image container, li */
-/* nav .logo {
+nav .logo {
     flex-basis: 100%;
     justify-content: center;
     text-align: center;
     background-color: #082B59;
-} */
+}
  /* these styles control the button look across all breakpoints */
 nav a {
     color: white;
