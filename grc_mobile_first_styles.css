@@ -183,14 +183,29 @@ nav ul {
     padding-bottom: 300px;
   }
   /* sits inside of the white background, centered */
-  .main {
+  /* .main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-  }
+  } */
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+.one {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.two {
+    grid-column: 2/2;
+    grid-row: 1;
+    margin-left: 1rem;
+}
   figure {
     max-width: 100%;
     padding: 1rem;
