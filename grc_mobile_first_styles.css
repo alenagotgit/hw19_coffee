@@ -102,9 +102,8 @@ article {
 }
 figure img {
     max-width: 100%;
-    padding: 1rem;
     margin: 2rem;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .button {
     display: inline-block;
@@ -112,6 +111,7 @@ figure img {
     border-radius: 10px;
     padding: 0.5rem 1rem;
     margin: 0;
+    margin-top: 1rem;
     color: #f2f2f2;
     text-decoration: none;
     border: 3px solid #59331d;
@@ -182,11 +182,15 @@ nav ul {
     background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
     padding-bottom: 300px;
   }
+  article {
+    flex-basis: auto;
+    margin-left: -50px;
+}
   .main {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1.5rem;
-    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+    grid-auto-rows: minmax(200px, auto);
 }
   .one {
     grid-column: 1/2;
@@ -195,13 +199,12 @@ nav ul {
   .two {
     grid-column: 2/2;
     grid-row: 1;
-    margin-left: 1rem;
 }
   figure img {
     max-width: 100%;
-    padding: 1rem;
-    margin: 2rem;
-    border-radius: 30px;
+    padding: 0rem;
+    margin-top: 6rem;
+    border-radius: 20px;
   }
 }
 
@@ -214,17 +217,17 @@ nav ul {
   .main {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1.5rem;
-    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+    grid-auto-rows: minmax(200px, auto);
 }
   .one {
     grid-column: 1/2;
     grid-row: 1;
+    margin-left: -170px;
 }
   .two {
     grid-column: 2/2;
     grid-row: 1;
-    margin-left: 5rem;
 }
   /* takes all extra space and pushes navbar to the right */
   nav ul {
@@ -233,9 +236,14 @@ nav ul {
     list-style-type: none;
     justify-content: right;
 }
- nav .logo {
+  nav .logo {
      display: flex;
      justify-content: flex-start;
      margin-right: auto;
-}
+  }
+  figure img {
+    max-width: 100%;
+    margin-top: 6rem;
+    border-radius: 20px;
+  }
 }

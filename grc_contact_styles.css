@@ -140,13 +140,16 @@ footer a {
     .text_container {
         grid-column: 1/2;
         grid-row: 1;
+        margin-left: 2rem;
     }
     .image_container {
         grid-column: 2/2;
         grid-row: 1;
+        margin-top: 2rem;
     }
     .image_container img {
         max-width: 100%;
+        height: auto;
     }   
 /* navbar styling */
 
