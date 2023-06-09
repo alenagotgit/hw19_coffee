@@ -126,7 +126,7 @@ footer a {
 
 
 /* tablet */
-@media (min-width: 600px) {
+@media (min-width: 550px) {
     
     .container {
         display: grid;

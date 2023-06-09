@@ -19,7 +19,6 @@ nav ul {
   list-style-type: none;
   display: block;
 }
-
 nav li {
   margin: 0 1rem 1rem 1rem;
   font-size: 1.3rem;
@@ -215,12 +214,6 @@ nav ul {
     justify-content: flex-start;
     gap: 1rem;
   }
-  /* nav li {
-    display: inline;
-  } */
-  /* nav li a {
-    float: left;
-  } */
   /* takes all extra space and pushes navbar to the right */
   .logo {
     margin-right: auto;

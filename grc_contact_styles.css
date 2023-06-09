@@ -129,7 +129,7 @@ footer a {
 
 
 /* tablet */
-@media (min-width: 600px) {
+@media (min-width: 550px) {
     
     .main_container {
         display: grid;
@@ -184,28 +184,33 @@ nav ul {
 }
 
 
+
 /* desktop */
 @media (min-width: 1000px) {
- 
+    
+    /* desktop first: navbar displays with logo on left and navbar on right */
+  
     nav ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        gap: 1rem;  
-    }
-
-    nav .logo a {
-         display: flex;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      gap: 1rem;
     }
     /* takes all extra space and pushes navbar to the right */
     .logo {
-        margin-right: auto;
+      margin-right: auto;
     }
-    .text_container {
-        margin-top: 6rem;
-    }
-    
-}
+    nav ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      justify-content: right;
+  }
+  nav .logo a {
+       display: flex;
+       margin-right: auto;
+  }
+  }
