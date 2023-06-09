@@ -182,26 +182,17 @@ nav ul {
     background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
     padding-bottom: 300px;
   }
-  /* sits inside of the white background, centered */
-  /* .main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  } */
   .main {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
     grid-auto-rows: minmax(100px, auto);
 }
-.one {
+  .one {
     grid-column: 1/2;
     grid-row: 1;
 }
-.two {
+  .two {
     grid-column: 2/2;
     grid-row: 1;
     margin-left: 1rem;
@@ -219,28 +210,31 @@ nav ul {
 @media (min-width: 1000px) {
     
   /* desktop first: navbar displays with logo on left and navbar on right */
-
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    gap: 1rem;
-  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+  .one {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+  .two {
+    grid-column: 2/2;
+    grid-row: 1;
+    margin-left: 5rem;
+}
   /* takes all extra space and pushes navbar to the right */
-  .logo {
-    margin-right: auto;
-  }
   nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
     justify-content: right;
 }
-nav .logo a {
+ nav .logo {
      display: flex;
+     justify-content: flex-start;
      margin-right: auto;
 }
 }

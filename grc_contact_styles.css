@@ -209,8 +209,9 @@ nav ul {
       list-style-type: none;
       justify-content: right;
   }
-    nav .logo a {
+    nav .logo {
        display: flex;
        margin-right: auto;
+       justify-content: flex-start;
   }
 }
